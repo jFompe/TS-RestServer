@@ -1,3 +1,10 @@
-export const name = 'Fompe'
+import dotenv from 'dotenv';
+import Server from './models/server';
 
-console.log(name)
+dotenv.config();
+
+
+const server = new Server();
+
+
+server.listen();
